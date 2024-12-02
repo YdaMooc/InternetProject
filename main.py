@@ -85,6 +85,7 @@ def fetch_bilibili_data(url, headers):
         df.to_csv('TOP100.csv', index=False, encoding="utf_8_sig")
     pass
 
+
 # 生成词云
 def generate_wordcloud(text):
     # 使用 jieba 提取关键词
@@ -167,6 +168,10 @@ def first():
         # 生成词云
         text = ' '.join(df['视频标题'])
         generate_wordcloud(text)
+
+
+def second():
+    pass
 
 
 # 主程序
